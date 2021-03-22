@@ -13,16 +13,16 @@ class OTGraphQLApiManager: NSObject {
     let shared = OTGraphQLApiManager()
     
     
-    private lazy var apollo: ApolloClient = {
-        let network = RequestChainNetworkTransport(
-            interceptorProvider: LegacyInterceptorProvider(),
-            endpointURL: URL(string: "https://api.github.com/graphql")!,
-            additionalHeaders: [
-                "Authorization": "Bearer \(token)"
-            ]
-        )
-        
-        return .init(networkTransport: network)
-    }()
+//    private lazy var apollo: ApolloClient = {
+//        let network = RequestChainNetworkTransport(
+//            interceptorProvider: LegacyInterceptorProvider(),
+//            endpointURL: URL(string: "https://api.github.com/graphql")!,
+//            additionalHeaders: [
+//                "Authorization": "Bearer \(token)"
+//            ]
+//        )
+//        
+//        return .init(networkTransport: network)
+//    }()
     
 }

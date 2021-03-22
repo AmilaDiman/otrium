@@ -13,7 +13,7 @@ class OTUICollectionViewCell: UICollectionViewCell {
 
 extension OTUICollectionViewCell {
     func addSubviewForContraints(view: UIView) {
-        self.view.addSubview(view)
+        self.contentView.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
     }
 }

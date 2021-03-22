@@ -49,6 +49,15 @@
 		2409FEE026090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */; };
 		2409FEE126090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */; };
 		2409FEE226090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */; };
+		2409FEF02609111500A57604 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2409FEEC2609111500A57604 /* schema.json */; };
+		2409FEF12609111500A57604 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2409FEEC2609111500A57604 /* schema.json */; };
+		2409FEF22609111500A57604 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2409FEEC2609111500A57604 /* schema.json */; };
+		2409FF05260913FD00A57604 /* RepositoryDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2409FF04260913FD00A57604 /* RepositoryDetails.graphql */; };
+		2409FF06260913FD00A57604 /* RepositoryDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2409FF04260913FD00A57604 /* RepositoryDetails.graphql */; };
+		2409FF07260913FD00A57604 /* RepositoryDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2409FF04260913FD00A57604 /* RepositoryDetails.graphql */; };
+		246A5FE0260916B80012D93D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246A5FDF260916B80012D93D /* API.swift */; };
+		246A5FE1260916B80012D93D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246A5FDF260916B80012D93D /* API.swift */; };
+		246A5FE2260916B80012D93D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246A5FDF260916B80012D93D /* API.swift */; };
 		2498D0BA26077DFF0008E3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498D0B926077DFF0008E3C7 /* AppDelegate.swift */; };
 		2498D0C426077DFF0008E3C7 /* Otrium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2498D0C226077DFF0008E3C7 /* Otrium.xcdatamodeld */; };
 		2498D0C626077E010008E3C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2498D0C526077E010008E3C7 /* Assets.xcassets */; };
@@ -93,6 +102,9 @@
 		2409FED02609044C00A57604 /* OTUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUICollectionViewCell.swift; sourceTree = "<group>"; };
 		2409FED72609057500A57604 /* OTUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUIView.swift; sourceTree = "<group>"; };
 		2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTGraphQLApiManager.swift; sourceTree = "<group>"; };
+		2409FEEC2609111500A57604 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		2409FF04260913FD00A57604 /* RepositoryDetails.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RepositoryDetails.graphql; sourceTree = "<group>"; };
+		246A5FDF260916B80012D93D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		2498D0B626077DFF0008E3C7 /* Otrium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Otrium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2498D0B926077DFF0008E3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2498D0C326077DFF0008E3C7 /* Otrium.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Otrium.xcdatamodel; sourceTree = "<group>"; };
@@ -212,9 +224,17 @@
 		2409FEDE26090CD200A57604 /* GraphQL */ = {
 			isa = PBXGroup;
 			children = (
+				2409FF002609129200A57604 /* Queries */,
 				2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		2409FF002609129200A57604 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Queries;
 			sourceTree = "<group>";
 		};
 		2498D0AD26077DFF0008E3C7 = {
@@ -250,6 +270,9 @@
 				2409FE2B26088D8F00A57604 /* Presenters */,
 				2409FE2826088D6500A57604 /* DataSources */,
 				2498D0B926077DFF0008E3C7 /* AppDelegate.swift */,
+				2409FEEC2609111500A57604 /* schema.json */,
+				246A5FDF260916B80012D93D /* API.swift */,
+				2409FF04260913FD00A57604 /* RepositoryDetails.graphql */,
 				2498D0CA26077E010008E3C7 /* Info.plist */,
 			);
 			path = Otrium;
@@ -304,6 +327,7 @@
 			buildConfigurationList = 2498D0E326077E020008E3C7 /* Build configuration list for PBXNativeTarget "Otrium" */;
 			buildPhases = (
 				39D3A7F61BC152E2C0E7E1BF /* [CP] Check Pods Manifest.lock */,
+				2409FEE926090E8900A57604 /* Generate Apollo GraphQL API */,
 				2498D0B226077DFF0008E3C7 /* Sources */,
 				2498D0B326077DFF0008E3C7 /* Frameworks */,
 				2498D0B426077DFF0008E3C7 /* Resources */,
@@ -405,7 +429,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2409FF05260913FD00A57604 /* RepositoryDetails.graphql in Resources */,
 				2498D0C926077E010008E3C7 /* LaunchScreen.storyboard in Resources */,
+				2409FEF02609111500A57604 /* schema.json in Resources */,
 				2498D0C626077E010008E3C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +440,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2409FF06260913FD00A57604 /* RepositoryDetails.graphql in Resources */,
+				2409FEF12609111500A57604 /* schema.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +449,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2409FF07260913FD00A57604 /* RepositoryDetails.graphql in Resources */,
+				2409FEF22609111500A57604 /* schema.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +473,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Otrium-OtriumUITests/Pods-Otrium-OtriumUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		2409FEE926090E8900A57604 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n";
 		};
 		39D3A7F61BC152E2C0E7E1BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -549,6 +597,7 @@
 				2409FED12609044C00A57604 /* OTUICollectionViewCell.swift in Sources */,
 				2409FE5B2608943500A57604 /* OTProfileViewController.swift in Sources */,
 				2409FED82609057500A57604 /* OTUIView.swift in Sources */,
+				246A5FE0260916B80012D93D /* API.swift in Sources */,
 				2409FEA12608AB0700A57604 /* OTUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +620,7 @@
 				2409FE702608967E00A57604 /* OTProfileModel.swift in Sources */,
 				2409FE7A2608968C00A57604 /* OTProfilePresenter.swift in Sources */,
 				2409FED22609044C00A57604 /* OTUICollectionViewCell.swift in Sources */,
+				246A5FE1260916B80012D93D /* API.swift in Sources */,
 				2409FEC02608B65A00A57604 /* OTUIScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +643,7 @@
 				2409FE712608967E00A57604 /* OTProfileModel.swift in Sources */,
 				2409FE7B2608968C00A57604 /* OTProfilePresenter.swift in Sources */,
 				2409FED32609044C00A57604 /* OTUICollectionViewCell.swift in Sources */,
+				246A5FE2260916B80012D93D /* API.swift in Sources */,
 				2409FEC12608B65A00A57604 /* OTUIScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
