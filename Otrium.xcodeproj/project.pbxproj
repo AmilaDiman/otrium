@@ -1,0 +1,926 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2409FE5B2608943500A57604 /* OTProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE5A2608943500A57604 /* OTProfileViewController.swift */; };
+		2409FE5C2608943500A57604 /* OTProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE5A2608943500A57604 /* OTProfileViewController.swift */; };
+		2409FE5D2608943500A57604 /* OTProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE5A2608943500A57604 /* OTProfileViewController.swift */; };
+		2409FE6F2608967E00A57604 /* OTProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE6E2608967E00A57604 /* OTProfileModel.swift */; };
+		2409FE702608967E00A57604 /* OTProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE6E2608967E00A57604 /* OTProfileModel.swift */; };
+		2409FE712608967E00A57604 /* OTProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE6E2608967E00A57604 /* OTProfileModel.swift */; };
+		2409FE792608968C00A57604 /* OTProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE782608968C00A57604 /* OTProfilePresenter.swift */; };
+		2409FE7A2608968C00A57604 /* OTProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE782608968C00A57604 /* OTProfilePresenter.swift */; };
+		2409FE7B2608968C00A57604 /* OTProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE782608968C00A57604 /* OTProfilePresenter.swift */; };
+		2409FE80260896A600A57604 /* OTProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE7F260896A600A57604 /* OTProfileDataSource.swift */; };
+		2409FE81260896A600A57604 /* OTProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE7F260896A600A57604 /* OTProfileDataSource.swift */; };
+		2409FE82260896A600A57604 /* OTProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE7F260896A600A57604 /* OTProfileDataSource.swift */; };
+		2409FE882608A18A00A57604 /* OTRepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE872608A18A00A57604 /* OTRepositoryModel.swift */; };
+		2409FE892608A18A00A57604 /* OTRepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE872608A18A00A57604 /* OTRepositoryModel.swift */; };
+		2409FE8A2608A18A00A57604 /* OTRepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE872608A18A00A57604 /* OTRepositoryModel.swift */; };
+		2409FE8F2608A26300A57604 /* OTRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE8E2608A26300A57604 /* OTRepositoryDataSource.swift */; };
+		2409FE902608A26300A57604 /* OTRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE8E2608A26300A57604 /* OTRepositoryDataSource.swift */; };
+		2409FE912608A26300A57604 /* OTRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE8E2608A26300A57604 /* OTRepositoryDataSource.swift */; };
+		2409FE972608AA8F00A57604 /* OTUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE962608AA8F00A57604 /* OTUILabel.swift */; };
+		2409FE982608AA8F00A57604 /* OTUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE962608AA8F00A57604 /* OTUILabel.swift */; };
+		2409FE992608AA8F00A57604 /* OTUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE962608AA8F00A57604 /* OTUILabel.swift */; };
+		2409FEA12608AB0700A57604 /* OTUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEA02608AB0700A57604 /* OTUIViewController.swift */; };
+		2409FEA22608AB0700A57604 /* OTUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEA02608AB0700A57604 /* OTUIViewController.swift */; };
+		2409FEA32608AB0700A57604 /* OTUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEA02608AB0700A57604 /* OTUIViewController.swift */; };
+		2409FEB52608AD1300A57604 /* OTUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEB42608AD1300A57604 /* OTUIImageView.swift */; };
+		2409FEB62608AD1300A57604 /* OTUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEB42608AD1300A57604 /* OTUIImageView.swift */; };
+		2409FEB72608AD1300A57604 /* OTUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEB42608AD1300A57604 /* OTUIImageView.swift */; };
+		2409FEBF2608B65A00A57604 /* OTUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEBE2608B65A00A57604 /* OTUIScrollView.swift */; };
+		2409FEC02608B65A00A57604 /* OTUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEBE2608B65A00A57604 /* OTUIScrollView.swift */; };
+		2409FEC12608B65A00A57604 /* OTUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEBE2608B65A00A57604 /* OTUIScrollView.swift */; };
+		2409FEC72608FED400A57604 /* OTRepoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEC62608FED400A57604 /* OTRepoCollectionViewCell.swift */; };
+		2409FEC82608FED400A57604 /* OTRepoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEC62608FED400A57604 /* OTRepoCollectionViewCell.swift */; };
+		2409FEC92608FED400A57604 /* OTRepoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEC62608FED400A57604 /* OTRepoCollectionViewCell.swift */; };
+		2409FED12609044C00A57604 /* OTUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FED02609044C00A57604 /* OTUICollectionViewCell.swift */; };
+		2409FED22609044C00A57604 /* OTUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FED02609044C00A57604 /* OTUICollectionViewCell.swift */; };
+		2409FED32609044C00A57604 /* OTUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FED02609044C00A57604 /* OTUICollectionViewCell.swift */; };
+		2409FED82609057500A57604 /* OTUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FED72609057500A57604 /* OTUIView.swift */; };
+		2409FED92609057500A57604 /* OTUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FED72609057500A57604 /* OTUIView.swift */; };
+		2409FEDA2609057500A57604 /* OTUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FED72609057500A57604 /* OTUIView.swift */; };
+		2409FEE026090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */; };
+		2409FEE126090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */; };
+		2409FEE226090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */; };
+		2498D0BA26077DFF0008E3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498D0B926077DFF0008E3C7 /* AppDelegate.swift */; };
+		2498D0C426077DFF0008E3C7 /* Otrium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2498D0C226077DFF0008E3C7 /* Otrium.xcdatamodeld */; };
+		2498D0C626077E010008E3C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2498D0C526077E010008E3C7 /* Assets.xcassets */; };
+		2498D0C926077E010008E3C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2498D0C726077E010008E3C7 /* LaunchScreen.storyboard */; };
+		2498D0D426077E020008E3C7 /* OtriumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498D0D326077E020008E3C7 /* OtriumTests.swift */; };
+		2498D0DF26077E020008E3C7 /* OtriumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498D0DE26077E020008E3C7 /* OtriumUITests.swift */; };
+		72CAB2091927E8F9704D8098 /* Pods_Otrium_OtriumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F57B4FBE43A06080E3F555 /* Pods_Otrium_OtriumUITests.framework */; };
+		A10D0B89F9173B96A02D9DE9 /* Pods_Otrium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DFA345D98B83A797B7DF6F /* Pods_Otrium.framework */; };
+		F3BB29FA9DEA31A89CD654E7 /* Pods_OtriumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30BD0D67D99997F24EC4757 /* Pods_OtriumTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2498D0D026077E020008E3C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2498D0AE26077DFF0008E3C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2498D0B526077DFF0008E3C7;
+			remoteInfo = Otrium;
+		};
+		2498D0DB26077E020008E3C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2498D0AE26077DFF0008E3C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2498D0B526077DFF0008E3C7;
+			remoteInfo = Otrium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1800454B3EC01E9A5B6A6915 /* Pods-Otrium-OtriumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Otrium-OtriumUITests.debug.xcconfig"; path = "Target Support Files/Pods-Otrium-OtriumUITests/Pods-Otrium-OtriumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2409FE5A2608943500A57604 /* OTProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTProfileViewController.swift; sourceTree = "<group>"; };
+		2409FE6E2608967E00A57604 /* OTProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTProfileModel.swift; sourceTree = "<group>"; };
+		2409FE782608968C00A57604 /* OTProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTProfilePresenter.swift; sourceTree = "<group>"; };
+		2409FE7F260896A600A57604 /* OTProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTProfileDataSource.swift; sourceTree = "<group>"; };
+		2409FE872608A18A00A57604 /* OTRepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTRepositoryModel.swift; sourceTree = "<group>"; };
+		2409FE8E2608A26300A57604 /* OTRepositoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTRepositoryDataSource.swift; sourceTree = "<group>"; };
+		2409FE962608AA8F00A57604 /* OTUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUILabel.swift; sourceTree = "<group>"; };
+		2409FEA02608AB0700A57604 /* OTUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUIViewController.swift; sourceTree = "<group>"; };
+		2409FEB42608AD1300A57604 /* OTUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUIImageView.swift; sourceTree = "<group>"; };
+		2409FEBE2608B65A00A57604 /* OTUIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUIScrollView.swift; sourceTree = "<group>"; };
+		2409FEC62608FED400A57604 /* OTRepoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTRepoCollectionViewCell.swift; sourceTree = "<group>"; };
+		2409FED02609044C00A57604 /* OTUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUICollectionViewCell.swift; sourceTree = "<group>"; };
+		2409FED72609057500A57604 /* OTUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUIView.swift; sourceTree = "<group>"; };
+		2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTGraphQLApiManager.swift; sourceTree = "<group>"; };
+		2498D0B626077DFF0008E3C7 /* Otrium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Otrium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2498D0B926077DFF0008E3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2498D0C326077DFF0008E3C7 /* Otrium.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Otrium.xcdatamodel; sourceTree = "<group>"; };
+		2498D0C526077E010008E3C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2498D0C826077E010008E3C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2498D0CA26077E010008E3C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2498D0CF26077E020008E3C7 /* OtriumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtriumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2498D0D326077E020008E3C7 /* OtriumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtriumTests.swift; sourceTree = "<group>"; };
+		2498D0D526077E020008E3C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2498D0DA26077E020008E3C7 /* OtriumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtriumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2498D0DE26077E020008E3C7 /* OtriumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtriumUITests.swift; sourceTree = "<group>"; };
+		2498D0E026077E020008E3C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28B9E1E6DF93AF8597768E0F /* Pods-OtriumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtriumTests.release.xcconfig"; path = "Target Support Files/Pods-OtriumTests/Pods-OtriumTests.release.xcconfig"; sourceTree = "<group>"; };
+		2FA4EA3A85129B1D1BAA9455 /* Pods-Otrium-OtriumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Otrium-OtriumUITests.release.xcconfig"; path = "Target Support Files/Pods-Otrium-OtriumUITests/Pods-Otrium-OtriumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		35DA0D338065F1EAC8B61D5C /* Pods-Otrium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Otrium.debug.xcconfig"; path = "Target Support Files/Pods-Otrium/Pods-Otrium.debug.xcconfig"; sourceTree = "<group>"; };
+		9704C0E5672EDC965AD7A799 /* Pods-Otrium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Otrium.release.xcconfig"; path = "Target Support Files/Pods-Otrium/Pods-Otrium.release.xcconfig"; sourceTree = "<group>"; };
+		A30BD0D67D99997F24EC4757 /* Pods_OtriumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtriumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F57B4FBE43A06080E3F555 /* Pods_Otrium_OtriumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Otrium_OtriumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D6E0D3C55F6034D57A2DA8 /* Pods-OtriumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtriumTests.debug.xcconfig"; path = "Target Support Files/Pods-OtriumTests/Pods-OtriumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8DFA345D98B83A797B7DF6F /* Pods_Otrium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Otrium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2498D0B326077DFF0008E3C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10D0B89F9173B96A02D9DE9 /* Pods_Otrium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2498D0CC26077E020008E3C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BB29FA9DEA31A89CD654E7 /* Pods_OtriumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2498D0D726077E020008E3C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72CAB2091927E8F9704D8098 /* Pods_Otrium_OtriumUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2409FE2826088D6500A57604 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE7F260896A600A57604 /* OTProfileDataSource.swift */,
+				2409FE8E2608A26300A57604 /* OTRepositoryDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		2409FE2926088D6E00A57604 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE6E2608967E00A57604 /* OTProfileModel.swift */,
+				2409FE872608A18A00A57604 /* OTRepositoryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2409FE2A26088D7300A57604 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2409FEC52608FEB300A57604 /* ViewCells */,
+				2409FE5A2608943500A57604 /* OTProfileViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2409FE2B26088D8F00A57604 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE782608968C00A57604 /* OTProfilePresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		2409FE6D260895C000A57604 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2498D0C726077E010008E3C7 /* LaunchScreen.storyboard */,
+				2498D0C226077DFF0008E3C7 /* Otrium.xcdatamodeld */,
+				2498D0C526077E010008E3C7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2409FE952608A2DC00A57604 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2409FEA02608AB0700A57604 /* OTUIViewController.swift */,
+				2409FE962608AA8F00A57604 /* OTUILabel.swift */,
+				2409FEB42608AD1300A57604 /* OTUIImageView.swift */,
+				2409FEBE2608B65A00A57604 /* OTUIScrollView.swift */,
+				2409FED02609044C00A57604 /* OTUICollectionViewCell.swift */,
+				2409FED72609057500A57604 /* OTUIView.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		2409FEC52608FEB300A57604 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2409FEC62608FED400A57604 /* OTRepoCollectionViewCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		2409FEDE26090CD200A57604 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		2498D0AD26077DFF0008E3C7 = {
+			isa = PBXGroup;
+			children = (
+				2498D0B826077DFF0008E3C7 /* Otrium */,
+				2498D0D226077E020008E3C7 /* OtriumTests */,
+				2498D0DD26077E020008E3C7 /* OtriumUITests */,
+				2498D0B726077DFF0008E3C7 /* Products */,
+				A4FD7B88F5AA6ACD19DBFC34 /* Pods */,
+				466B65B0A26B9CB3458994A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2498D0B726077DFF0008E3C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2498D0B626077DFF0008E3C7 /* Otrium.app */,
+				2498D0CF26077E020008E3C7 /* OtriumTests.xctest */,
+				2498D0DA26077E020008E3C7 /* OtriumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2498D0B826077DFF0008E3C7 /* Otrium */ = {
+			isa = PBXGroup;
+			children = (
+				2409FEDE26090CD200A57604 /* GraphQL */,
+				2409FE6D260895C000A57604 /* Resources */,
+				2409FE952608A2DC00A57604 /* BaseClasses */,
+				2409FE2926088D6E00A57604 /* Models */,
+				2409FE2A26088D7300A57604 /* Views */,
+				2409FE2B26088D8F00A57604 /* Presenters */,
+				2409FE2826088D6500A57604 /* DataSources */,
+				2498D0B926077DFF0008E3C7 /* AppDelegate.swift */,
+				2498D0CA26077E010008E3C7 /* Info.plist */,
+			);
+			path = Otrium;
+			sourceTree = "<group>";
+		};
+		2498D0D226077E020008E3C7 /* OtriumTests */ = {
+			isa = PBXGroup;
+			children = (
+				2498D0D326077E020008E3C7 /* OtriumTests.swift */,
+				2498D0D526077E020008E3C7 /* Info.plist */,
+			);
+			path = OtriumTests;
+			sourceTree = "<group>";
+		};
+		2498D0DD26077E020008E3C7 /* OtriumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2498D0DE26077E020008E3C7 /* OtriumUITests.swift */,
+				2498D0E026077E020008E3C7 /* Info.plist */,
+			);
+			path = OtriumUITests;
+			sourceTree = "<group>";
+		};
+		466B65B0A26B9CB3458994A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8DFA345D98B83A797B7DF6F /* Pods_Otrium.framework */,
+				A7F57B4FBE43A06080E3F555 /* Pods_Otrium_OtriumUITests.framework */,
+				A30BD0D67D99997F24EC4757 /* Pods_OtriumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4FD7B88F5AA6ACD19DBFC34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35DA0D338065F1EAC8B61D5C /* Pods-Otrium.debug.xcconfig */,
+				9704C0E5672EDC965AD7A799 /* Pods-Otrium.release.xcconfig */,
+				1800454B3EC01E9A5B6A6915 /* Pods-Otrium-OtriumUITests.debug.xcconfig */,
+				2FA4EA3A85129B1D1BAA9455 /* Pods-Otrium-OtriumUITests.release.xcconfig */,
+				B2D6E0D3C55F6034D57A2DA8 /* Pods-OtriumTests.debug.xcconfig */,
+				28B9E1E6DF93AF8597768E0F /* Pods-OtriumTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2498D0B526077DFF0008E3C7 /* Otrium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2498D0E326077E020008E3C7 /* Build configuration list for PBXNativeTarget "Otrium" */;
+			buildPhases = (
+				39D3A7F61BC152E2C0E7E1BF /* [CP] Check Pods Manifest.lock */,
+				2498D0B226077DFF0008E3C7 /* Sources */,
+				2498D0B326077DFF0008E3C7 /* Frameworks */,
+				2498D0B426077DFF0008E3C7 /* Resources */,
+				DA7D0462D34E7BA6B012236E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Otrium;
+			productName = Otrium;
+			productReference = 2498D0B626077DFF0008E3C7 /* Otrium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2498D0CE26077E020008E3C7 /* OtriumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2498D0E626077E020008E3C7 /* Build configuration list for PBXNativeTarget "OtriumTests" */;
+			buildPhases = (
+				FD606AC7106A8D7AC594C461 /* [CP] Check Pods Manifest.lock */,
+				2498D0CB26077E020008E3C7 /* Sources */,
+				2498D0CC26077E020008E3C7 /* Frameworks */,
+				2498D0CD26077E020008E3C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2498D0D126077E020008E3C7 /* PBXTargetDependency */,
+			);
+			name = OtriumTests;
+			productName = OtriumTests;
+			productReference = 2498D0CF26077E020008E3C7 /* OtriumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2498D0D926077E020008E3C7 /* OtriumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2498D0E926077E020008E3C7 /* Build configuration list for PBXNativeTarget "OtriumUITests" */;
+			buildPhases = (
+				7016EF55231DBD820FE62858 /* [CP] Check Pods Manifest.lock */,
+				2498D0D626077E020008E3C7 /* Sources */,
+				2498D0D726077E020008E3C7 /* Frameworks */,
+				2498D0D826077E020008E3C7 /* Resources */,
+				140A511CD87A7FF55DE3F2EB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2498D0DC26077E020008E3C7 /* PBXTargetDependency */,
+			);
+			name = OtriumUITests;
+			productName = OtriumUITests;
+			productReference = 2498D0DA26077E020008E3C7 /* OtriumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2498D0AE26077DFF0008E3C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OT;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2498D0B526077DFF0008E3C7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					2498D0CE26077E020008E3C7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2498D0B526077DFF0008E3C7;
+					};
+					2498D0D926077E020008E3C7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2498D0B526077DFF0008E3C7;
+					};
+				};
+			};
+			buildConfigurationList = 2498D0B126077DFF0008E3C7 /* Build configuration list for PBXProject "Otrium" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2498D0AD26077DFF0008E3C7;
+			productRefGroup = 2498D0B726077DFF0008E3C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2498D0B526077DFF0008E3C7 /* Otrium */,
+				2498D0CE26077E020008E3C7 /* OtriumTests */,
+				2498D0D926077E020008E3C7 /* OtriumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2498D0B426077DFF0008E3C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2498D0C926077E010008E3C7 /* LaunchScreen.storyboard in Resources */,
+				2498D0C626077E010008E3C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2498D0CD26077E020008E3C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2498D0D826077E020008E3C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		140A511CD87A7FF55DE3F2EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Otrium-OtriumUITests/Pods-Otrium-OtriumUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Otrium-OtriumUITests/Pods-Otrium-OtriumUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Otrium-OtriumUITests/Pods-Otrium-OtriumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39D3A7F61BC152E2C0E7E1BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Otrium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7016EF55231DBD820FE62858 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Otrium-OtriumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA7D0462D34E7BA6B012236E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Otrium/Pods-Otrium-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Otrium/Pods-Otrium-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Otrium/Pods-Otrium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD606AC7106A8D7AC594C461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OtriumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2498D0B226077DFF0008E3C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2409FE792608968C00A57604 /* OTProfilePresenter.swift in Sources */,
+				2409FEC72608FED400A57604 /* OTRepoCollectionViewCell.swift in Sources */,
+				2409FE80260896A600A57604 /* OTProfileDataSource.swift in Sources */,
+				2409FE6F2608967E00A57604 /* OTProfileModel.swift in Sources */,
+				2409FEB52608AD1300A57604 /* OTUIImageView.swift in Sources */,
+				2498D0BA26077DFF0008E3C7 /* AppDelegate.swift in Sources */,
+				2409FE882608A18A00A57604 /* OTRepositoryModel.swift in Sources */,
+				2409FEBF2608B65A00A57604 /* OTUIScrollView.swift in Sources */,
+				2409FE972608AA8F00A57604 /* OTUILabel.swift in Sources */,
+				2409FE8F2608A26300A57604 /* OTRepositoryDataSource.swift in Sources */,
+				2498D0C426077DFF0008E3C7 /* Otrium.xcdatamodeld in Sources */,
+				2409FEE026090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */,
+				2409FED12609044C00A57604 /* OTUICollectionViewCell.swift in Sources */,
+				2409FE5B2608943500A57604 /* OTProfileViewController.swift in Sources */,
+				2409FED82609057500A57604 /* OTUIView.swift in Sources */,
+				2409FEA12608AB0700A57604 /* OTUIViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2498D0CB26077E020008E3C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2409FE892608A18A00A57604 /* OTRepositoryModel.swift in Sources */,
+				2409FEC82608FED400A57604 /* OTRepoCollectionViewCell.swift in Sources */,
+				2409FEB62608AD1300A57604 /* OTUIImageView.swift in Sources */,
+				2409FE902608A26300A57604 /* OTRepositoryDataSource.swift in Sources */,
+				2498D0D426077E020008E3C7 /* OtriumTests.swift in Sources */,
+				2409FEE126090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */,
+				2409FED92609057500A57604 /* OTUIView.swift in Sources */,
+				2409FE982608AA8F00A57604 /* OTUILabel.swift in Sources */,
+				2409FE81260896A600A57604 /* OTProfileDataSource.swift in Sources */,
+				2409FE5C2608943500A57604 /* OTProfileViewController.swift in Sources */,
+				2409FEA22608AB0700A57604 /* OTUIViewController.swift in Sources */,
+				2409FE702608967E00A57604 /* OTProfileModel.swift in Sources */,
+				2409FE7A2608968C00A57604 /* OTProfilePresenter.swift in Sources */,
+				2409FED22609044C00A57604 /* OTUICollectionViewCell.swift in Sources */,
+				2409FEC02608B65A00A57604 /* OTUIScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2498D0D626077E020008E3C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2409FE8A2608A18A00A57604 /* OTRepositoryModel.swift in Sources */,
+				2409FEC92608FED400A57604 /* OTRepoCollectionViewCell.swift in Sources */,
+				2409FEB72608AD1300A57604 /* OTUIImageView.swift in Sources */,
+				2409FE912608A26300A57604 /* OTRepositoryDataSource.swift in Sources */,
+				2498D0DF26077E020008E3C7 /* OtriumUITests.swift in Sources */,
+				2409FEE226090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */,
+				2409FEDA2609057500A57604 /* OTUIView.swift in Sources */,
+				2409FE992608AA8F00A57604 /* OTUILabel.swift in Sources */,
+				2409FE82260896A600A57604 /* OTProfileDataSource.swift in Sources */,
+				2409FE5D2608943500A57604 /* OTProfileViewController.swift in Sources */,
+				2409FEA32608AB0700A57604 /* OTUIViewController.swift in Sources */,
+				2409FE712608967E00A57604 /* OTProfileModel.swift in Sources */,
+				2409FE7B2608968C00A57604 /* OTProfilePresenter.swift in Sources */,
+				2409FED32609044C00A57604 /* OTUICollectionViewCell.swift in Sources */,
+				2409FEC12608B65A00A57604 /* OTUIScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2498D0D126077E020008E3C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2498D0B526077DFF0008E3C7 /* Otrium */;
+			targetProxy = 2498D0D026077E020008E3C7 /* PBXContainerItemProxy */;
+		};
+		2498D0DC26077E020008E3C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2498D0B526077DFF0008E3C7 /* Otrium */;
+			targetProxy = 2498D0DB26077E020008E3C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2498D0C726077E010008E3C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2498D0C826077E010008E3C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2498D0E126077E020008E3C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2498D0E226077E020008E3C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2498D0E426077E020008E3C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DA0D338065F1EAC8B61D5C /* Pods-Otrium.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DBTLXAD4K;
+				INFOPLIST_FILE = Otrium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gapstars.Otrium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2498D0E526077E020008E3C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9704C0E5672EDC965AD7A799 /* Pods-Otrium.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DBTLXAD4K;
+				INFOPLIST_FILE = Otrium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gapstars.Otrium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2498D0E726077E020008E3C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D6E0D3C55F6034D57A2DA8 /* Pods-OtriumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DBTLXAD4K;
+				INFOPLIST_FILE = OtriumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gapstars.OtriumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Otrium.app/Otrium";
+			};
+			name = Debug;
+		};
+		2498D0E826077E020008E3C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B9E1E6DF93AF8597768E0F /* Pods-OtriumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DBTLXAD4K;
+				INFOPLIST_FILE = OtriumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gapstars.OtriumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Otrium.app/Otrium";
+			};
+			name = Release;
+		};
+		2498D0EA26077E020008E3C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1800454B3EC01E9A5B6A6915 /* Pods-Otrium-OtriumUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DBTLXAD4K;
+				INFOPLIST_FILE = OtriumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gapstars.OtriumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Otrium;
+			};
+			name = Debug;
+		};
+		2498D0EB26077E020008E3C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA4EA3A85129B1D1BAA9455 /* Pods-Otrium-OtriumUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DBTLXAD4K;
+				INFOPLIST_FILE = OtriumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gapstars.OtriumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Otrium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2498D0B126077DFF0008E3C7 /* Build configuration list for PBXProject "Otrium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2498D0E126077E020008E3C7 /* Debug */,
+				2498D0E226077E020008E3C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2498D0E326077E020008E3C7 /* Build configuration list for PBXNativeTarget "Otrium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2498D0E426077E020008E3C7 /* Debug */,
+				2498D0E526077E020008E3C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2498D0E626077E020008E3C7 /* Build configuration list for PBXNativeTarget "OtriumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2498D0E726077E020008E3C7 /* Debug */,
+				2498D0E826077E020008E3C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2498D0E926077E020008E3C7 /* Build configuration list for PBXNativeTarget "OtriumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2498D0EA26077E020008E3C7 /* Debug */,
+				2498D0EB26077E020008E3C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2498D0C226077DFF0008E3C7 /* Otrium.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2498D0C326077DFF0008E3C7 /* Otrium.xcdatamodel */,
+			);
+			currentVersion = 2498D0C326077DFF0008E3C7 /* Otrium.xcdatamodel */;
+			path = Otrium.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2498D0AE26077DFF0008E3C7 /* Project object */;
+}
