@@ -8,12 +8,11 @@
 import UIKit
 
 class OTUIScrollView: UIScrollView {
-
-}
-
-extension OTUIScrollView {
-    func addSubviewForContraints(view: UIView) {
+    /// Adds sub view with contraints enabled
+    /// - Parameter view: the view to add
+    internal func addSubviewForConstrainted(view: UIView) {
         self.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
     }
 }
+

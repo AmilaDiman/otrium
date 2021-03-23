@@ -8,9 +8,15 @@
 import UIKit
 
 class OTProfileViewController: OTUIViewController {
-    
+
+    //MARK:- Private variables
+
     private let presenter = OTProfilePresenter(profileDataSource: OTProfileDataSource())
-    
+    private let cellHeight: CGFloat = 164
+    private let cellSpacing: CGFloat = 16
+
+    //MARK:- View elements
+
     lazy var scrollView : OTUIScrollView = {
         let scrollView = OTUIScrollView()
         scrollView.refreshControl = refreshControl
@@ -91,16 +97,16 @@ class OTProfileViewController: OTUIViewController {
     lazy var horizontalLayout : UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 16
-        layout.minimumInteritemSpacing = 16
+        layout.minimumLineSpacing = cellSpacing
+        layout.minimumInteritemSpacing = cellSpacing
         return layout
     }()
     
     lazy var verticalLayout : UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.minimumLineSpacing = 16
-        layout.minimumInteritemSpacing = 16
+        layout.minimumLineSpacing = cellSpacing
+        layout.minimumInteritemSpacing = cellSpacing
         return layout
     }()
     
@@ -131,7 +137,8 @@ class OTProfileViewController: OTUIViewController {
         return collectionView
     }()
     
-    
+    //MARK:- Overrides
+
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.delegate = self
@@ -140,6 +147,8 @@ class OTProfileViewController: OTUIViewController {
         refreshDetails()
     }
     
+    //MARK:- Private methods
+
     @objc func refreshDetails() {
         refreshControl.beginRefreshing()
         presenter.getStarredRepoDetails()
@@ -148,22 +157,24 @@ class OTProfileViewController: OTUIViewController {
         presenter.getProfileDetails()
     }
     
-    private func setupUI(){
+    private func setupUI() {
+        view.showBlurLoader()
         view.backgroundColor = .white
-        addSubviewForContraints(view: scrollView)
-        scrollView.addSubviewForContraints(view: profileLabel)
-        scrollView.addSubviewForContraints(view: profileImageView)
-        scrollView.addSubviewForContraints(view: nameLabel)
-        scrollView.addSubviewForContraints(view: usernameLabel)
-        scrollView.addSubviewForContraints(view: emailLabel)
-        scrollView.addSubviewForContraints(view: followersLabel)
-        scrollView.addSubviewForContraints(view: followingLabel)
-        scrollView.addSubviewForContraints(view: pinnedRepoCollectionView)
-        scrollView.addSubviewForContraints(view: topRepoCollectionView)
-        scrollView.addSubviewForContraints(view: starredRepoCollectionView)
-        scrollView.addSubviewForContraints(view: topRepoHeaderView)
-        scrollView.addSubviewForContraints(view: pinnedRepoHeaderView)
-        scrollView.addSubviewForContraints(view: starredRepoHeaderView)
+        
+        addSubviewForConstrainted(view: scrollView)
+        scrollView.addSubviewForConstrainted(view: profileLabel)
+        scrollView.addSubviewForConstrainted(view: profileImageView)
+        scrollView.addSubviewForConstrainted(view: nameLabel)
+        scrollView.addSubviewForConstrainted(view: usernameLabel)
+        scrollView.addSubviewForConstrainted(view: emailLabel)
+        scrollView.addSubviewForConstrainted(view: followersLabel)
+        scrollView.addSubviewForConstrainted(view: followingLabel)
+        scrollView.addSubviewForConstrainted(view: pinnedRepoCollectionView)
+        scrollView.addSubviewForConstrainted(view: topRepoCollectionView)
+        scrollView.addSubviewForConstrainted(view: starredRepoCollectionView)
+        scrollView.addSubviewForConstrainted(view: topRepoHeaderView)
+        scrollView.addSubviewForConstrainted(view: pinnedRepoHeaderView)
+        scrollView.addSubviewForConstrainted(view: starredRepoHeaderView)
         
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -237,15 +248,17 @@ class OTProfileViewController: OTUIViewController {
             starredRepoCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             starredRepoCollectionView.heightAnchor.constraint(equalToConstant: 180),
             starredRepoCollectionView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            
         ])
     }
 }
 
+//MARK:- UICollectionViewDelegate
+
 extension OTProfileViewController: UICollectionViewDelegate {
     // to be implemented
-    
 }
+
+//MARK:- UICollectionViewDataSource
 
 extension OTProfileViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -277,25 +290,29 @@ extension OTProfileViewController: UICollectionViewDataSource {
     }
 }
 
+//MARK:- UICollectionViewDelegateFlowLayout
+
 extension OTProfileViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == starredRepoCollectionView || collectionView == topRepoCollectionView {
-            return .init(width: (collectionView.frame.width/2) - 24, height: 164)
+            return .init(width: (collectionView.frame.width/2) - 24, height: cellHeight)
         }
         
-        return .init(width: collectionView.frame.width - 24, height: 164)
+        return .init(width: collectionView.frame.width - 24, height: cellHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if collectionView == starredRepoCollectionView || collectionView == topRepoCollectionView {
-            return .init(top: 0, left: 16, bottom: 0, right: 16)
+            return .init(top: 0, left: cellSpacing, bottom: 0, right: cellSpacing)
         }
         
         return .init(top: 0, left: 0, bottom: 0, right: 0)
     }
 }
+
+//MARK:- OTProfileViewPresenterDelegate
 
 extension OTProfileViewController: OTProfileViewPresenterDelegate {
     func profileDetailsUpdated(_ presenter: OTProfilePresenter, profile: OTProfileModel) {
@@ -308,6 +325,7 @@ extension OTProfileViewController: OTProfileViewPresenterDelegate {
         followingLabel.text = String("\(profile.following!) following")
         
         refreshControl.endRefreshing()
+        view.hideBlurLoader()
     }
     
     func starredRepositoriesUpdated(_ presenter: OTProfilePresenter, repositories: [OTRepositoryModel]) {

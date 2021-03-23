@@ -8,15 +8,9 @@
 import UIKit
 
 class OTUIViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-}
-
-extension OTUIViewController {
-    func addSubviewForContraints(view: UIView) {
+    /// Adds sub view with contraints enabled
+    /// - Parameter view: the view to add
+    internal func addSubviewForConstrainted(view: UIView) {
         self.view.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
     }

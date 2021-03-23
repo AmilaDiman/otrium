@@ -8,10 +8,9 @@
 import UIKit
 
 class OTUILabel: UILabel {
-
     init() {
         super.init(frame: .zero)
-        self.font = UIFont.init(name: "Source Sans Pro", size: 12)
+        self.font = UIFont.init(name: "SourceSansPro-SemiBold", size: 16)
     }
     
     required init?(coder: NSCoder) {

@@ -7,61 +7,79 @@
 
 import UIKit
 
+//MARK:- OTProfileViewPresenterDelegate
+
 protocol OTProfileViewPresenterDelegate: class {
     func pinnedRepositoriesUpdated(_ presenter: OTProfilePresenter, repositories: [OTRepositoryModel])
     func starredRepositoriesUpdated(_ presenter: OTProfilePresenter, repositories: [OTRepositoryModel])
     func topRepositoriesUpdated(_ presenter: OTProfilePresenter, repositories: [OTRepositoryModel])
     func profileDetailsUpdated(_ presenter: OTProfilePresenter, profile: OTProfileModel)
-
-    
 }
 
-
 class OTProfilePresenter: NSObject {
+    //MARK:- Public variables
+    
+    /// Delegate for presentes actions
     weak var delegate : OTProfileViewPresenterDelegate?
 
+    //MARK:- Private variables
+
+    /// Data source for profile;repo details
     private let profileDataSource: OTProfileDataSource
     
+    /// Array of pinned repos
     private(set) var pinnedRepositories = [OTRepositoryModel]()
+    
+    /// Array of starred repos
     private(set) var starredRepositories = [OTRepositoryModel]()
+    
+    /// Array of top repos
     private(set) var topRepositories = [OTRepositoryModel]()
+
+    //MARK:- Inits
 
     init(profileDataSource: OTProfileDataSource){
         self.profileDataSource = profileDataSource
     }
     
-    func getStarredRepoDetails() {
+    //MARK:- Public methods
+    
+    /// Retrieves repo details from cache or network when available
+    public func getStarredRepoDetails() {
         profileDataSource.getStarredRepoDetails { (repositories) in
             self.starredRepositories = repositories
             self.delegate?.starredRepositoriesUpdated(self, repositories: self.starredRepositories)
         } onFailure: { (error) in
-            
+            //TODO: handle errors
         }
     }
     
-    func getPinnedRepoDetails() {
+    /// Retrieves repo details from cache or network when available
+    public func getPinnedRepoDetails() {
         profileDataSource.getPinnedRepoDetails { (repositories) in
             self.pinnedRepositories = repositories
             self.delegate?.pinnedRepositoriesUpdated(self, repositories: self.pinnedRepositories)
         } onFailure: { (error) in
-            
+            //TODO: handle errors
         }
     }
     
-    func getTopRepoDetails() {
+    /// Retrieves repo details from cache or network when available
+    public func getTopRepoDetails() {
         profileDataSource.getTopRepoDetails { (repositories) in
             self.topRepositories = repositories
             self.delegate?.topRepositoriesUpdated(self, repositories: self.topRepositories)
         } onFailure: { (error) in
-            
+            //TODO: handle errors
         }
     }
     
-    func getProfileDetails() {
+    /// Retrieves profile details from cache or network when available
+    public func getProfileDetails() {
         profileDataSource.getProfileDetails { (profile) in
             self.delegate?.profileDetailsUpdated(self, profile: profile)
         } onFailure: { (error) in
-            
+            //TODO: handle errors
         }
     }
 }

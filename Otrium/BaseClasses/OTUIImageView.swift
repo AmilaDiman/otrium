@@ -9,22 +9,22 @@ import UIKit
 
 class OTUIImageView: UIImageView {
     let imageCache = NSCache<NSString, AnyObject>()
-
+    
+    /// Loads images from cache if exists ro loads from internet
+    /// - Parameter urlString: the url to fetch image from
     func loadImageUsingCache(withUrl urlString : String?) {
         guard urlString != nil else {
             return
         }
 
         let url = URL(string: urlString!)
-        self.image = nil
+        image = nil
 
-        // check cached image
-        if let cachedImage = imageCache.object(forKey: urlString as! NSString) as? UIImage {
-            self.image = cachedImage
+        if let cachedImage = imageCache.object(forKey: urlString! as NSString) as? UIImage {
+            image = cachedImage
             return
         }
 
-        // if not, download image from url
         URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
             if error != nil {
                 print(error!)

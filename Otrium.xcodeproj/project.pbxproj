@@ -278,17 +278,9 @@
 		2409FEDE26090CD200A57604 /* GraphQL */ = {
 			isa = PBXGroup;
 			children = (
-				2409FF002609129200A57604 /* Queries */,
 				2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */,
 			);
 			path = GraphQL;
-			sourceTree = "<group>";
-		};
-		2409FF002609129200A57604 /* Queries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Queries;
 			sourceTree = "<group>";
 		};
 		24223C16260A57D30051267E /* Fonts */ = {
@@ -336,12 +328,12 @@
 			isa = PBXGroup;
 			children = (
 				2409FEDE26090CD200A57604 /* GraphQL */,
-				2409FE6D260895C000A57604 /* Resources */,
 				2409FE952608A2DC00A57604 /* BaseClasses */,
+				2409FE2826088D6500A57604 /* DataSources */,
 				2409FE2926088D6E00A57604 /* Models */,
 				2409FE2A26088D7300A57604 /* Views */,
 				2409FE2B26088D8F00A57604 /* Presenters */,
-				2409FE2826088D6500A57604 /* DataSources */,
+				2409FE6D260895C000A57604 /* Resources */,
 				2498D0B926077DFF0008E3C7 /* AppDelegate.swift */,
 				2409FEEC2609111500A57604 /* schema.json */,
 				246A5FDF260916B80012D93D /* API.swift */,

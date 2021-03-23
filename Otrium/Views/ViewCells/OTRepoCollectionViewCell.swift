@@ -8,8 +8,12 @@
 import UIKit
 
 class OTRepoCollectionViewCell: OTUICollectionViewCell {
+    //MARK:- Constants
+
     static let identifier = "OTRepoCollectionViewCell"
     
+    //MARK:- View elements
+
     lazy var profileImageView : OTUIImageView = {
         let imageView = OTUIImageView()
         imageView.layer.cornerRadius = 16
@@ -64,6 +68,8 @@ class OTRepoCollectionViewCell: OTUICollectionViewCell {
         return view
     }()
     
+    //MARK:- Overrides
+
     override init(frame: CGRect) {
         super.init(frame: .zero)
         setupUI()
@@ -83,21 +89,22 @@ class OTRepoCollectionViewCell: OTUICollectionViewCell {
         starCountLabel.text = ""
     }
     
-    
+    //MARK:- Private methods
+
     private func setupUI() {
         layer.borderWidth = 1
         layer.borderColor =  UIColor.lightGray.withAlphaComponent(0.5).cgColor
         layer.cornerRadius = 8
         clipsToBounds = true
         
-        addSubviewForContraints(view: profileImageView)
-        addSubviewForContraints(view: usernameLabel)
-        addSubviewForContraints(view: repoTitleLabel)
-        addSubviewForContraints(view: repoDescriptionLabel)
-        addSubviewForContraints(view: starsImageView)
-        addSubviewForContraints(view: starCountLabel)
-        addSubviewForContraints(view: languageColorView)
-        addSubviewForContraints(view: languageLabel)
+        addSubviewForConstrainted(view: profileImageView)
+        addSubviewForConstrainted(view: usernameLabel)
+        addSubviewForConstrainted(view: repoTitleLabel)
+        addSubviewForConstrainted(view: repoDescriptionLabel)
+        addSubviewForConstrainted(view: starsImageView)
+        addSubviewForConstrainted(view: starCountLabel)
+        addSubviewForConstrainted(view: languageColorView)
+        addSubviewForConstrainted(view: languageLabel)
         
         NSLayoutConstraint.activate([
             profileImageView.heightAnchor.constraint(equalToConstant: 32),
@@ -138,10 +145,13 @@ class OTRepoCollectionViewCell: OTUICollectionViewCell {
             languageLabel.leadingAnchor.constraint(equalTo: languageColorView.trailingAnchor, constant: 5),
             languageLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
             languageLabel.centerYAnchor.constraint(equalTo: starCountLabel.centerYAnchor),
-            
         ])
     }
     
+    //MARK:- Public methods
+    
+    /// Sets the the elements of the cell with the gievn details
+    /// - Parameter repository: the details to fill cell elements
     func setup(repository: OTRepositoryModel) {
         profileImageView.loadImageUsingCache(withUrl: repository.imageUrl)
         usernameLabel.text = repository.username
@@ -150,5 +160,4 @@ class OTRepoCollectionViewCell: OTUICollectionViewCell {
         languageLabel.text = repository.language
         starCountLabel.text = String(repository.starCount ?? 0)
     }
-    
 }

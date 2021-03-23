@@ -9,10 +9,18 @@ import UIKit
 import Apollo
 
 class OTProfileDataSource: NSObject {
+    //MARK:- Private variables
 
-    let username = "fabpot"
+    /// Username of prifile to fetch
+    private let username = "fabpot" //TODO: hard coded for testing purposes
+    
+    //MARK:- Public data retrieval methods
 
-    func getStarredRepoDetails(onSuccess successCallback: ((_ repositories: [OTRepositoryModel]) -> Void)?,
+    /// Retrieves starred repos for the given user
+    /// - Parameters:
+    ///   - successCallback: success callback with results of request
+    ///   - failureCallback: error callback with error details
+    public func getStarredRepoDetails(onSuccess successCallback: ((_ repositories: [OTRepositoryModel]) -> Void)?,
                                onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
         OTGraphQLApiManager.shared.apollo.fetch(query: StarredRepositoriesQuery(username: username),
                                                 cachePolicy: .fetchIgnoringCacheData) { result in
@@ -36,7 +44,11 @@ class OTProfileDataSource: NSObject {
         }
     }
     
-    func getPinnedRepoDetails(onSuccess successCallback: ((_ repositories: [OTRepositoryModel]) -> Void)?,
+    /// Retrieves pinned repos for the given user
+    /// - Parameters:
+    ///   - successCallback: success callback with results of request
+    ///   - failureCallback: error callback with error details
+    public func getPinnedRepoDetails(onSuccess successCallback: ((_ repositories: [OTRepositoryModel]) -> Void)?,
                                onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
         OTGraphQLApiManager.shared.apollo.fetch(query: PinnedRepositoriesQuery(username: username),
                                                 cachePolicy: .fetchIgnoringCacheData) { result in
@@ -60,7 +72,11 @@ class OTProfileDataSource: NSObject {
         }
     }
     
-    func getTopRepoDetails(onSuccess successCallback: ((_ repositories: [OTRepositoryModel]) -> Void)?,
+    /// Retrieves top repos for the given user
+    /// - Parameters:
+    ///   - successCallback: success callback with results of request
+    ///   - failureCallback: error callback with error details
+    public func getTopRepoDetails(onSuccess successCallback: ((_ repositories: [OTRepositoryModel]) -> Void)?,
                                onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
         OTGraphQLApiManager.shared.apollo.fetch(query: TopRepositoriesQuery(username: username),
                                                 cachePolicy: .fetchIgnoringCacheData) { result in
@@ -84,7 +100,11 @@ class OTProfileDataSource: NSObject {
         }
     }
     
-    func getProfileDetails(onSuccess successCallback: ((_ profile: OTProfileModel) -> Void)?,
+    /// Retrieves profile details for the given user
+    /// - Parameters:
+    ///   - successCallback: success callback with results of request
+    ///   - failureCallback: error callback with error details
+    public func getProfileDetails(onSuccess successCallback: ((_ profile: OTProfileModel) -> Void)?,
                                onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
         OTGraphQLApiManager.shared.apollo.fetch(query: ProfileDetailsQuery(username: username),
                                                 cachePolicy: .fetchIgnoringCacheData) { result in
@@ -102,5 +122,4 @@ class OTProfileDataSource: NSObject {
             }
         }
     }
-    
 }

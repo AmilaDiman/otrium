@@ -8,10 +8,10 @@
 import UIKit
 
 class OTUIButton: UIButton {
-
-    func addSubviewForContraints(view: UIView) {
+    /// Adds sub view with contraints enabled
+    /// - Parameter view: the view to add
+    internal func addSubviewForConstrainted(view: UIView) {
         self.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
     }
-
 }

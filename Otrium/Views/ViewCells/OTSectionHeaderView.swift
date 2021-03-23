@@ -9,6 +9,8 @@ import UIKit
 
 class OTSectionHeaderView: OTUIView {
 
+    //MARK:- View elements
+
     lazy var titleLabel : OTUILabel = {
         let label = OTUILabel()
         label.font = UIFont.init(name: "SourceSansPro-SemiBold", size: 24)
@@ -28,6 +30,8 @@ class OTSectionHeaderView: OTUIView {
         return button
     }()
     
+    //MARK:- Overrides
+
     override init(frame: CGRect) {
         super.init(frame: .zero)
         setupUI()
@@ -37,9 +41,11 @@ class OTSectionHeaderView: OTUIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupUI() {
-        addSubviewForConstraints(view: titleLabel)
-        addSubviewForConstraints(view: viewAllButton)
+    //MARK:- Private methods
+
+    private func setupUI() {
+        addSubviewForConstrainted(view: titleLabel)
+        addSubviewForConstrainted(view: viewAllButton)
         
         NSLayoutConstraint.activate([
             titleLabel.heightAnchor.constraint(equalToConstant: 32),
