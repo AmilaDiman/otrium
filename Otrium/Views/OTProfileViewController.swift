@@ -33,6 +33,7 @@ class OTProfileViewController: OTUIViewController {
         let imageView = OTUIImageView()
         imageView.layer.cornerRadius = 44
         imageView.clipsToBounds = true
+        imageView.backgroundColor = .lightGray
         return imageView
     }()
     

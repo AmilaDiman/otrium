@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Apollo
 
 //MARK:- OTProfileViewPresenterDelegate
 
@@ -45,30 +46,33 @@ class OTProfilePresenter: NSObject {
     //MARK:- Public methods
     
     /// Retrieves repo details from cache or network when available
-    public func getStarredRepoDetails() {
+    public func getStarredRepoDetails(callBack: ((_ repositories: [OTRepositoryModel]) -> Void)? = nil) {
         profileDataSource.getStarredRepoDetails { (repositories) in
             self.starredRepositories = repositories
             self.delegate?.starredRepositoriesUpdated(self, repositories: self.starredRepositories)
+            callBack?(repositories)
         } onFailure: { (error) in
             //TODO: handle errors
         }
     }
     
     /// Retrieves repo details from cache or network when available
-    public func getPinnedRepoDetails() {
+    public func getPinnedRepoDetails(callBack: ((_ repositories: [OTRepositoryModel]) -> Void)? = nil) {
         profileDataSource.getPinnedRepoDetails { (repositories) in
             self.pinnedRepositories = repositories
             self.delegate?.pinnedRepositoriesUpdated(self, repositories: self.pinnedRepositories)
+            callBack?(repositories)
         } onFailure: { (error) in
             //TODO: handle errors
         }
     }
     
     /// Retrieves repo details from cache or network when available
-    public func getTopRepoDetails() {
+    public func getTopRepoDetails(callBack: ((_ repositories: [OTRepositoryModel]) -> Void)? = nil) {
         profileDataSource.getTopRepoDetails { (repositories) in
             self.topRepositories = repositories
             self.delegate?.topRepositoriesUpdated(self, repositories: self.topRepositories)
+            callBack?(repositories)
         } onFailure: { (error) in
             //TODO: handle errors
         }
