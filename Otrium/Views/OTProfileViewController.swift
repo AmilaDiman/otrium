@@ -149,7 +149,8 @@ class OTProfileViewController: OTUIViewController {
     }
     
     //MARK:- Private methods
-
+    
+    /// Retrieves repo details from Github
     @objc func refreshDetails() {
         refreshControl.beginRefreshing()
         presenter.getStarredRepoDetails()
@@ -256,7 +257,7 @@ class OTProfileViewController: OTUIViewController {
 //MARK:- UICollectionViewDelegate
 
 extension OTProfileViewController: UICollectionViewDelegate {
-    // to be implemented
+    //TODO: To be implemented
 }
 
 //MARK:- UICollectionViewDataSource
