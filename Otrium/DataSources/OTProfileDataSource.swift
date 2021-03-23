@@ -10,7 +10,7 @@ import Apollo
 
 class OTProfileDataSource: NSObject {
 
-    let username = "piemonte"
+    let username = "fabpot"
 
     func getStarredRepoDetails(onSuccess successCallback: ((_ repositories: [OTRepositoryModel]) -> Void)?,
                                onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
@@ -90,9 +90,10 @@ class OTProfileDataSource: NSObject {
                                                 cachePolicy: .fetchIgnoringCacheData) { result in
             switch result {
             case .success(let result):
-                if let userDetails = result.data?.user {
-                    
-//                    successCallback?(repoList)
+                if let userDetails = result.data?.user?.resultMap {
+                    let model = OTProfileModel()
+                    model.load(resultMap: userDetails)
+                    successCallback?(model)
                 }
                 
             case .failure(let error):

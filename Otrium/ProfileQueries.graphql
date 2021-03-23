@@ -1,6 +1,6 @@
 query StarredRepositories($username: String!) {
 	user(login: $username) {
-		starredRepositories(first: 6) {
+		starredRepositories(first: 10) {
 			nodes {
 				... on Repository {
 					name
@@ -21,7 +21,7 @@ query StarredRepositories($username: String!) {
 
 query PinnedRepositories($username: String!) {
 	user(login: $username) {
-		pinnedItems(first: 10) {
+		pinnedItems(first: 3) {
 			nodes {
 				... on Repository {
 					name

@@ -11,7 +11,7 @@ public final class StarredRepositoriesQuery: GraphQLQuery {
     query StarredRepositories($username: String!) {
       user(login: $username) {
         __typename
-        starredRepositories(first: 6) {
+        starredRepositories(first: 10) {
           __typename
           nodes {
             __typename
@@ -82,7 +82,7 @@ public final class StarredRepositoriesQuery: GraphQLQuery {
       public static var selections: [GraphQLSelection] {
         return [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-          GraphQLField("starredRepositories", arguments: ["first": 6], type: .nonNull(.object(StarredRepository.selections))),
+          GraphQLField("starredRepositories", arguments: ["first": 10], type: .nonNull(.object(StarredRepository.selections))),
         ]
       }
 
@@ -344,7 +344,7 @@ public final class PinnedRepositoriesQuery: GraphQLQuery {
     query PinnedRepositories($username: String!) {
       user(login: $username) {
         __typename
-        pinnedItems(first: 10) {
+        pinnedItems(first: 3) {
           __typename
           nodes {
             __typename
@@ -415,7 +415,7 @@ public final class PinnedRepositoriesQuery: GraphQLQuery {
       public static var selections: [GraphQLSelection] {
         return [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-          GraphQLField("pinnedItems", arguments: ["first": 10], type: .nonNull(.object(PinnedItem.selections))),
+          GraphQLField("pinnedItems", arguments: ["first": 3], type: .nonNull(.object(PinnedItem.selections))),
         ]
       }
 
