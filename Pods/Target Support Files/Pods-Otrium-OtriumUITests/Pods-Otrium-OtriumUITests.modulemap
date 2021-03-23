@@ -1,6 +1,0 @@
-framework module Pods_Otrium_OtriumUITests {
-  umbrella header "Pods-Otrium-OtriumUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
