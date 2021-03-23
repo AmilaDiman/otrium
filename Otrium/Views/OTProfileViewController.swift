@@ -143,7 +143,7 @@ class OTProfileViewController: OTUIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.delegate = self
-        
+
         setupUI()
         refreshDetails()
     }
@@ -339,5 +339,9 @@ extension OTProfileViewController: OTProfileViewPresenterDelegate {
     
     func pinnedRepositoriesUpdated(_ presenter: OTProfilePresenter, repositories: [OTRepositoryModel]) {
         pinnedRepoCollectionView.reloadData()
+    }
+    
+    func showError(_ presenter: OTProfilePresenter, error: String) {
+        showAlert(message: error)
     }
 }

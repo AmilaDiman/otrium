@@ -15,6 +15,7 @@ protocol OTProfileViewPresenterDelegate: class {
     func starredRepositoriesUpdated(_ presenter: OTProfilePresenter, repositories: [OTRepositoryModel])
     func topRepositoriesUpdated(_ presenter: OTProfilePresenter, repositories: [OTRepositoryModel])
     func profileDetailsUpdated(_ presenter: OTProfilePresenter, profile: OTProfileModel)
+    func showError(_ presenter: OTProfilePresenter, error: String)
 }
 
 class OTProfilePresenter: NSObject {
@@ -83,6 +84,7 @@ class OTProfilePresenter: NSObject {
         profileDataSource.getProfileDetails { (profile) in
             self.delegate?.profileDetailsUpdated(self, profile: profile)
         } onFailure: { (error) in
+            self.delegate?.showError(self, error: error)
             //TODO: handle errors
         }
     }
