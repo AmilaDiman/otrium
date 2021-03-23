@@ -33,5 +33,5 @@ class OTGraphQLApiManager: NSObject {
     //MARK:- Private constants
 
     /// Token used for Github Graph QL auth
-    private let token = "bad0c5bc1cfcd2a076b233e474c2d6a003df5399" //TODO: hard coded for testing purposes
+    private let token = "50c6a02f08cd1bbb8850e2a4a4cb02ace07c34d2" //TODO: hard coded for testing purposes
 }
