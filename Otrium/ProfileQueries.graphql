@@ -1,0 +1,79 @@
+query StarredRepositories($username: String!) {
+	user(login: $username) {
+		starredRepositories(first: 6) {
+			nodes {
+				... on Repository {
+					name
+					stargazerCount
+					description
+					owner {
+						login
+						avatarUrl
+					}
+				}
+				primaryLanguage {
+					name
+				}
+			}
+		}
+	}
+}
+
+query PinnedRepositories($username: String!) {
+	user(login: $username) {
+		pinnedItems(first: 10) {
+			nodes {
+				... on Repository {
+					name
+					stargazerCount
+					description
+					owner {
+						login
+						avatarUrl
+					}
+					primaryLanguage {
+						name
+					}
+				}
+			}
+		}
+	}
+}
+
+query TopRepositories($username: String!) {
+	user(login: $username) {
+		topRepositories(orderBy: {field: CREATED_AT, direction: ASC}, first: 10) {
+			nodes {
+				... on Repository {
+					name
+					stargazerCount
+					description
+					owner {
+						login
+						avatarUrl
+					}
+					primaryLanguage {
+						name
+					}
+				}
+			}
+		}
+	}
+}
+
+query ProfileDetails($username: String!) {
+	user(login: $username) {
+		email
+		name
+		login
+		followers {
+			totalCount
+		}
+		following {
+			totalCount
+		}
+		avatarUrl
+	}
+}
+
+

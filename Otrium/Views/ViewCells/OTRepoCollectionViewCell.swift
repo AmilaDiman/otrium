@@ -8,7 +8,7 @@
 import UIKit
 
 class OTRepoCollectionViewCell: OTUICollectionViewCell {
-    let reuseIdentifierValue = "OTRepoCollectionViewCell"
+    static let identifier = "OTRepoCollectionViewCell"
     
     lazy var profileImageView : OTUIImageView = {
         let imageView = OTUIImageView()

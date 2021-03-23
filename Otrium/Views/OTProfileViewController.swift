@@ -9,8 +9,7 @@ import UIKit
 
 class OTProfileViewController: OTUIViewController {
     
-    private let profilePresenter = OTProfilePresenter(profileDataSource: OTProfileDataSource(),
-                                                      repositoryDataSource: OTRepositoryDataSource())
+    private let presenter = OTProfilePresenter(profileDataSource: OTProfileDataSource())
     
     lazy var scrollView : OTUIScrollView = {
         let scrollView = OTUIScrollView()
@@ -66,34 +65,61 @@ class OTProfileViewController: OTUIViewController {
         return label
     }()
     
+    lazy var horizontalLayout : UICollectionViewFlowLayout = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        return layout
+    }()
+    
+    lazy var verticalLayout : UICollectionViewFlowLayout = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        return layout
+    }()
+
+        
     lazy var pinnedRepoCollectionView : UICollectionView = {
-        let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-        view.backgroundColor = .yellow
-        return view
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: verticalLayout)
+        collectionView.register(OTRepoCollectionViewCell.self, forCellWithReuseIdentifier: OTRepoCollectionViewCell.identifier)
+        collectionView.backgroundColor = .yellow
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        return collectionView
     }()
     
     lazy var topRepoCollectionView : UICollectionView = {
-        let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-        view.backgroundColor = .blue
-        return view
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: horizontalLayout)
+        collectionView.register(OTRepoCollectionViewCell.self, forCellWithReuseIdentifier: OTRepoCollectionViewCell.identifier)
+        collectionView.backgroundColor = .blue
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        return collectionView
     }()
     
     lazy var starredRepoCollectionView : UICollectionView = {
-        let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-        view.backgroundColor = .red
-        return view
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: horizontalLayout)
+        collectionView.register(OTRepoCollectionViewCell.self, forCellWithReuseIdentifier: OTRepoCollectionViewCell.identifier)
+        collectionView.backgroundColor = .red
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        return collectionView
     }()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
+        presenter.delegate = self
+        presenter.getStarredRepoDetails()
+        presenter.getPinnedRepoDetails()
+        presenter.getTopRepoDetails()
+
     }
     
     private func setupUI(){
         view.backgroundColor = .white
         addSubviewForContraints(view: scrollView)
-        
         scrollView.addSubviewForContraints(view: profileImageView)
         scrollView.addSubviewForContraints(view: nameLabel)
         scrollView.addSubviewForContraints(view: usernameLabel)
@@ -160,8 +186,57 @@ class OTProfileViewController: OTUIViewController {
             starredRepoCollectionView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
 
         ])
+    }
+}
+
+extension OTProfileViewController: UICollectionViewDelegate {
+    // to be implemented
+}
+
+extension OTProfileViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == pinnedRepoCollectionView {
+            return presenter.pinnedRepositories.count
+        } else if collectionView == starredRepoCollectionView {
+            return presenter.starredRepositories.count
+        } else if collectionView == topRepoCollectionView {
+            return presenter.topRepositories.count
+        }
         
-        followersLabel.sizeToFit()
+        return 0
     }
     
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OTRepoCollectionViewCell.identifier,
+                                                      for: indexPath) as! OTRepoCollectionViewCell
+        
+        return cell
+    }
+}
+
+extension OTProfileViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return .init(width: 320, height: 164)
+    }
+}
+
+extension OTProfileViewController: OTProfileViewPresenterDelegate {
+    func profileDetailsUpdated(_ presenter: OTProfilePresenter, profile: OTProfileModel) {
+        
+    }
+    
+    func starredRepositoriesUpdated(_ presenter: OTProfilePresenter, repositories: [OTRepositoryModel]) {
+        starredRepoCollectionView.reloadData()
+    }
+    
+    func topRepositoriesUpdated(_ presenter: OTProfilePresenter, repositories: [OTRepositoryModel]) {
+        topRepoCollectionView.reloadData()
+    }
+    
+    func pinnedRepositoriesUpdated(_ presenter: OTProfilePresenter, repositories: [OTRepositoryModel]) {
+        pinnedRepoCollectionView.reloadData()
+    }
 }

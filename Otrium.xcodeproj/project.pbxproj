@@ -22,9 +22,6 @@
 		2409FE882608A18A00A57604 /* OTRepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE872608A18A00A57604 /* OTRepositoryModel.swift */; };
 		2409FE892608A18A00A57604 /* OTRepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE872608A18A00A57604 /* OTRepositoryModel.swift */; };
 		2409FE8A2608A18A00A57604 /* OTRepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE872608A18A00A57604 /* OTRepositoryModel.swift */; };
-		2409FE8F2608A26300A57604 /* OTRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE8E2608A26300A57604 /* OTRepositoryDataSource.swift */; };
-		2409FE902608A26300A57604 /* OTRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE8E2608A26300A57604 /* OTRepositoryDataSource.swift */; };
-		2409FE912608A26300A57604 /* OTRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE8E2608A26300A57604 /* OTRepositoryDataSource.swift */; };
 		2409FE972608AA8F00A57604 /* OTUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE962608AA8F00A57604 /* OTUILabel.swift */; };
 		2409FE982608AA8F00A57604 /* OTUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE962608AA8F00A57604 /* OTUILabel.swift */; };
 		2409FE992608AA8F00A57604 /* OTUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE962608AA8F00A57604 /* OTUILabel.swift */; };
@@ -52,9 +49,12 @@
 		2409FEF02609111500A57604 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2409FEEC2609111500A57604 /* schema.json */; };
 		2409FEF12609111500A57604 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2409FEEC2609111500A57604 /* schema.json */; };
 		2409FEF22609111500A57604 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 2409FEEC2609111500A57604 /* schema.json */; };
-		2409FF05260913FD00A57604 /* RepositoryDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2409FF04260913FD00A57604 /* RepositoryDetails.graphql */; };
-		2409FF06260913FD00A57604 /* RepositoryDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2409FF04260913FD00A57604 /* RepositoryDetails.graphql */; };
-		2409FF07260913FD00A57604 /* RepositoryDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2409FF04260913FD00A57604 /* RepositoryDetails.graphql */; };
+		2409FF05260913FD00A57604 /* ProfileQueries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2409FF04260913FD00A57604 /* ProfileQueries.graphql */; };
+		2409FF06260913FD00A57604 /* ProfileQueries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2409FF04260913FD00A57604 /* ProfileQueries.graphql */; };
+		2409FF07260913FD00A57604 /* ProfileQueries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2409FF04260913FD00A57604 /* ProfileQueries.graphql */; };
+		24223C09260A418C0051267E /* OTSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24223C08260A418C0051267E /* OTSectionHeaderView.swift */; };
+		24223C0A260A418C0051267E /* OTSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24223C08260A418C0051267E /* OTSectionHeaderView.swift */; };
+		24223C0B260A418C0051267E /* OTSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24223C08260A418C0051267E /* OTSectionHeaderView.swift */; };
 		246A5FE0260916B80012D93D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246A5FDF260916B80012D93D /* API.swift */; };
 		246A5FE1260916B80012D93D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246A5FDF260916B80012D93D /* API.swift */; };
 		246A5FE2260916B80012D93D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246A5FDF260916B80012D93D /* API.swift */; };
@@ -93,7 +93,6 @@
 		2409FE782608968C00A57604 /* OTProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTProfilePresenter.swift; sourceTree = "<group>"; };
 		2409FE7F260896A600A57604 /* OTProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTProfileDataSource.swift; sourceTree = "<group>"; };
 		2409FE872608A18A00A57604 /* OTRepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTRepositoryModel.swift; sourceTree = "<group>"; };
-		2409FE8E2608A26300A57604 /* OTRepositoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTRepositoryDataSource.swift; sourceTree = "<group>"; };
 		2409FE962608AA8F00A57604 /* OTUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUILabel.swift; sourceTree = "<group>"; };
 		2409FEA02608AB0700A57604 /* OTUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUIViewController.swift; sourceTree = "<group>"; };
 		2409FEB42608AD1300A57604 /* OTUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUIImageView.swift; sourceTree = "<group>"; };
@@ -103,7 +102,8 @@
 		2409FED72609057500A57604 /* OTUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUIView.swift; sourceTree = "<group>"; };
 		2409FEDF26090D5B00A57604 /* OTGraphQLApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTGraphQLApiManager.swift; sourceTree = "<group>"; };
 		2409FEEC2609111500A57604 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
-		2409FF04260913FD00A57604 /* RepositoryDetails.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RepositoryDetails.graphql; sourceTree = "<group>"; };
+		2409FF04260913FD00A57604 /* ProfileQueries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ProfileQueries.graphql; sourceTree = "<group>"; };
+		24223C08260A418C0051267E /* OTSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTSectionHeaderView.swift; sourceTree = "<group>"; };
 		246A5FDF260916B80012D93D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		2498D0B626077DFF0008E3C7 /* Otrium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Otrium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2498D0B926077DFF0008E3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				2409FE7F260896A600A57604 /* OTProfileDataSource.swift */,
-				2409FE8E2608A26300A57604 /* OTRepositoryDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -217,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				2409FEC62608FED400A57604 /* OTRepoCollectionViewCell.swift */,
+				24223C08260A418C0051267E /* OTSectionHeaderView.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 				2498D0B926077DFF0008E3C7 /* AppDelegate.swift */,
 				2409FEEC2609111500A57604 /* schema.json */,
 				246A5FDF260916B80012D93D /* API.swift */,
-				2409FF04260913FD00A57604 /* RepositoryDetails.graphql */,
+				2409FF04260913FD00A57604 /* ProfileQueries.graphql */,
 				2498D0CA26077E010008E3C7 /* Info.plist */,
 			);
 			path = Otrium;
@@ -429,7 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2409FF05260913FD00A57604 /* RepositoryDetails.graphql in Resources */,
+				2409FF05260913FD00A57604 /* ProfileQueries.graphql in Resources */,
 				2498D0C926077E010008E3C7 /* LaunchScreen.storyboard in Resources */,
 				2409FEF02609111500A57604 /* schema.json in Resources */,
 				2498D0C626077E010008E3C7 /* Assets.xcassets in Resources */,
@@ -440,7 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2409FF06260913FD00A57604 /* RepositoryDetails.graphql in Resources */,
+				2409FF06260913FD00A57604 /* ProfileQueries.graphql in Resources */,
 				2409FEF12609111500A57604 /* schema.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2409FF07260913FD00A57604 /* RepositoryDetails.graphql in Resources */,
+				2409FF07260913FD00A57604 /* ProfileQueries.graphql in Resources */,
 				2409FEF22609111500A57604 /* schema.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,8 +591,8 @@
 				2409FE882608A18A00A57604 /* OTRepositoryModel.swift in Sources */,
 				2409FEBF2608B65A00A57604 /* OTUIScrollView.swift in Sources */,
 				2409FE972608AA8F00A57604 /* OTUILabel.swift in Sources */,
-				2409FE8F2608A26300A57604 /* OTRepositoryDataSource.swift in Sources */,
 				2498D0C426077DFF0008E3C7 /* Otrium.xcdatamodeld in Sources */,
+				24223C09260A418C0051267E /* OTSectionHeaderView.swift in Sources */,
 				2409FEE026090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */,
 				2409FED12609044C00A57604 /* OTUICollectionViewCell.swift in Sources */,
 				2409FE5B2608943500A57604 /* OTProfileViewController.swift in Sources */,
@@ -606,10 +606,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24223C0A260A418C0051267E /* OTSectionHeaderView.swift in Sources */,
 				2409FE892608A18A00A57604 /* OTRepositoryModel.swift in Sources */,
 				2409FEC82608FED400A57604 /* OTRepoCollectionViewCell.swift in Sources */,
 				2409FEB62608AD1300A57604 /* OTUIImageView.swift in Sources */,
-				2409FE902608A26300A57604 /* OTRepositoryDataSource.swift in Sources */,
 				2498D0D426077E020008E3C7 /* OtriumTests.swift in Sources */,
 				2409FEE126090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */,
 				2409FED92609057500A57604 /* OTUIView.swift in Sources */,
@@ -629,10 +629,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24223C0B260A418C0051267E /* OTSectionHeaderView.swift in Sources */,
 				2409FE8A2608A18A00A57604 /* OTRepositoryModel.swift in Sources */,
 				2409FEC92608FED400A57604 /* OTRepoCollectionViewCell.swift in Sources */,
 				2409FEB72608AD1300A57604 /* OTUIImageView.swift in Sources */,
-				2409FE912608A26300A57604 /* OTRepositoryDataSource.swift in Sources */,
 				2498D0DF26077E020008E3C7 /* OtriumUITests.swift in Sources */,
 				2409FEE226090D5B00A57604 /* OTGraphQLApiManager.swift in Sources */,
 				2409FEDA2609057500A57604 /* OTUIView.swift in Sources */,
