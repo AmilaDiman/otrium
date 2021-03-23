@@ -10,7 +10,12 @@ import Apollo
 import Network
 
 class OTGraphQLApiManager: NSObject {
+    //MARK:- Private constants
    
+    #warning("fill in your Github API key below")
+    /// Token used for Github Graph QL auth
+    private let token = "PLACE_YOUR_TOKEN_HERE"
+    
     //MARK:- Public variables
     
     /// Shared instance of app to access Apollo
@@ -29,9 +34,4 @@ class OTGraphQLApiManager: NSObject {
                                                                  additionalHeaders: ["Authorization": "Bearer \(token)"])
         return ApolloClient(networkTransport: requestChainTransport, store: store)
     }()
-    
-    //MARK:- Private constants
-
-    /// Token used for Github Graph QL auth
-    private let token = "PLACE_YOUR_TOKEN_HERE"
 }
